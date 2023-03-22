@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J Querry</title>
+    <link rel="stylesheet" href="zadatak12.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+
+</head>
+
+<body>
+    <div id="pricing" class="container-fluid">
+        <table id="tabela" class="table table-bordered mt-5" style="width: 600px;">
+            <thead>
+                <tr>
+                    <th scope="col">Ime:</th>
+                    <th scope="col">Prezime:</th>
+                    <th scope="col">E - mail:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="1" class="text">Milan</td>
+                    <td id="2" class="text">Milanović</td>
+                    <td id="3" class="text">mil.mal@yahoo.com</td>
+                    <td><i class="fa-solid fa-xmark deleteRow xField text-secondary"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="4" class="text" onclick="klik4()">Spaso</td>
+                    <td id="5" class="text">Spasojević</td>
+                    <td id="6" class="text">spale@gmail.com</td>
+                    <td><i class="fa-solid fa-xmark deleteRow xField text-secondary"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="7" class="text">Jovana</td>
+                    <td id="8" class="text">Lukić</td>
+                    <td id="9" class="text">jluk@yahoo.com</td>
+                    <td><i class="fa-solid fa-xmark deleteRow xField text-secondary"></i>
+                </tr>
+            </tbody>
+        </table>
+
+    <div class="container" id="dodaj">
+        <div class="row px-5 d-flex justify-content-center">
+            <div class="col-md-8">
+                <button type="button" class="btn btn-secondary" id="dugmedodaj" onclick="tabela()">Dodaj novog zaposlenog</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<div class="container" style="display: none; "id="novizaposleni">
+        <div class="row px-5 justify-content-center" style="margin-left: 200px; margin-top: 0px;">
+            <div class="col-md-4">
+    <form id="podacinovizaposleni">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Ime:</label>
+          <input type="name" class="form-control" id="ime" aria-describedby="emailHelp" placeholder="Unesi ime">
+        </div><br>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Prezime:</label>
+          <input type="name" class="form-control" id="prezime" placeholder="Unesi prezime">
+        </div><br>
+        <div class="form-group">
+            <label for="exampleInputPassword1">E - mail:</label>
+            <input type="email" class="form-control" id="email" placeholder="Unesi e - mail">
+          </div><br>
+        <button type="button" class="btn btn-secondary" id="završi" onclick="završi()">Završi</button>
+      </form>
+            </div>
+        </div>
+</div>
+
+<script src="kod.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
